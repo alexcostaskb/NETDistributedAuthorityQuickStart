@@ -7,7 +7,7 @@ using Unity.Netcode.Editor;
 using UnityEditor;
 
 /// <summary>
-/// The custom editor for the <see cref="PlayerCubeController"/> component.
+/// custom editor for the PlayerCubeController component
 /// </summary>
 [CustomEditor(typeof(PlayerCubeController), true)]
 public class PlayerCubeControllerEditor : NetworkTransformEditor
@@ -51,6 +51,9 @@ public class PlayerCubeControllerEditor : NetworkTransformEditor
 
 #endif
 
+/// <summary>
+/// This class is a simple example of a player controller that moves a cube around the scene.
+/// </summary>
 public class PlayerCubeController : NetworkTransform
 {
 #if UNITY_EDITOR
